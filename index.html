@@ -3,28 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Text Layout</title>
+    <title>Centered Left-Aligned Text</title>
     <style>
+        /* Full-page styling */
         body {
             background-color: #123524; /* Phthalo Green */
-            color: white; /* White text for contrast */
-            text-align: center; /* Horizontally center text */
+            color: white; /* White text */
             font-family: Arial, sans-serif; /* Clean font */
-            margin: 20px;
+            margin: 0; /* Remove default margin */
+            padding: 20px; /* Space inside the border */
+            border: 20px solid black; /* 20px-wide black border */
+            box-sizing: border-box; /* Ensures padding doesn't push content out */
+            min-height: 100vh; /* Ensures the border covers the full height */
+            display: flex;
+            justify-content: center; /* Centers the container horizontally */
+        }
+
+        /* Centered content box */
+        .content {
+            width: 60%; /* Adjust width as needed */
+            max-width: 800px; /* Prevents it from getting too wide */
+            text-align: left; /* Left-aligns the text */
         }
     </style>
 </head>
 <body>
 
-    <h1>Heading 1 (Main Title)</h1>
-    <h2>Heading 2 (Section Title)</h2>
-    <h3>Heading 3 (Subsection Title)</h3>
+    <div class="content">
+        <h1>Heading 1 (Main Title)</h1>
+        <h2>Heading 2 (Section Title)</h2>
+        <h3>Heading 3 (Subsection Title)</h3>
 
-    <p>This is a sample paragraph. Use this style for body text.</p>
-    <p>Another example of paragraph text. Adjust font sizes and styles as needed.</p>
+        <p>This is a sample paragraph. Use this style for body text.</p>
+        <p>Another example of paragraph text. Adjust font sizes and styles as needed.</p>
 
-    <h2>Another Section</h2>
-    <p>More paragraph text for structure.</p>
+        <h2>Another Section</h2>
+        <p>More paragraph text for structure.</p>
+    </div>
 
 </body>
 </html>
