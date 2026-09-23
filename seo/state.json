@@ -1,0 +1,23 @@
+{
+  "_comment": "Baseline numbers per page. The agent writes Search Console data one day at a time into `daily`. Search Console lags 2-3 days, so the most recent days are always missing.",
+  "site": {
+    "property": null,
+    "conversion_event": null,
+    "analytics": null
+  },
+  "pages": {
+    "/": {
+      "main_query": null,
+      "status": "no-conversion-path",
+      "baseline": {
+        "window": null,
+        "impressions": null,
+        "clicks": null,
+        "avg_position": null,
+        "conversions": null
+      },
+      "last_change": null,
+      "daily": []
+    }
+  }
+}
